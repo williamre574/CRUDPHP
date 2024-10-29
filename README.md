@@ -1,5 +1,25 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+BD
+create database crudPHP;
+use crudPHP;
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10, 2) NOT NULL,
+    categoria VARCHAR(50)
+);
+
+INSERT INTO productos (nombre, descripcion, precio, categoria) VALUES
+('Laptop Dell XPS 13', 'Laptop ultradelgada de 13 pulgadas con procesador Intel Core i7 y 16GB de RAM', 1500.99, 'Electrónica'),
+('Smartphone Samsung Galaxy S21', 'Smartphone con pantalla AMOLED de 6.2 pulgadas y 128GB de almacenamiento', 799.99, 'Electrónica'),
+('Audífonos Sony WH-1000XM4', 'Audífonos inalámbricos con cancelación de ruido y hasta 30 horas de batería', 349.99, 'Accesorios'),
+('Cafetera Nespresso', 'Cafetera de cápsulas con función de espuma de leche para bebidas estilo barista', 199.99, 'Electrodomésticos'),
+('Bicicleta de montaña Trek', 'Bicicleta de montaña con cuadro de aluminio y 21 velocidades', 599.99, 'Deportes');
+
+
+
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
